@@ -24,7 +24,7 @@ with open(FILENAME, newline='') as csvfile:
         DATA.append(float(col))
 DATA = sorted(DATA, key=None, reverse=False)  
 if len(DATA)%2 == 0 :
-  MEDIAN =  ((DATA[(len(DATA)//2)]) + (DATA[(len(DATA)//2)+1]))/2
+  MEDIAN = ((DATA[(len(DATA)//2)]) + (DATA[(len(DATA)//2)+1]))/2
 else:
-  MEDIAN  = DATA[(len(DATA)//2)]
+  MEDIAN = DATA[(len(DATA)//2)]
 print (MEDIAN)
